@@ -68,13 +68,16 @@ for i in range(top):
 print(context)
 '''
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from langchain_community.document_loaders import DirectoryLoader
 loader = DirectoryLoader("Data", glob="**/*.txt")
 data = loader.load()
-print(len(data))
+# print(len(data))
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
 all_splits = text_splitter.split_documents(data)
@@ -82,27 +85,27 @@ all_splits = text_splitter.split_documents(data)
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 
-local_embeddings = OllamaEmbeddings(model="mistral")
+local_embeddings = OllamaEmbeddings(model="phi3:mini")
 
 vectorstore = Chroma.from_documents(documents=all_splits, embedding=local_embeddings)
 
-question = "What is Capacity?"
-docs = vectorstore.similarity_search(question)
-print(len(docs))
-print(docs[0])
+# question = "What is Capacity?"
+# docs = vectorstore.similarity_search(question)
+# print(len(docs))
+# print(docs[0])
 
 # Set the model 
 
 from langchain_ollama import ChatOllama
 model = ChatOllama(
-    model="mistral",
+    model="phi3:mini",
 )
 
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 prompt = ChatPromptTemplate.from_template(
-    "Summarize the main themes in these retrieved docs: {docs}"
+    "Given the following information that provides guidelines on 'high-energy': {docs}, does the following scenario contain high-energy elements, yes or no? {scenario}"
 )
 
 # Convert loaded documents into strings by concatenating their content
@@ -110,10 +113,12 @@ prompt = ChatPromptTemplate.from_template(
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
+def scenario_string(test):
+    return "An employee was on the top of a de-energized transformer at 25 feet of height with a proper fall arrest system. While working, she tripped on a lifting lug, falling within 2 feet from an unguarded edge. When the employee landed, she sprained her wrist."
 
-chain = {"docs": format_docs} | prompt | model | StrOutputParser()
+chain = {"docs": format_docs, "scenario": scenario_string} | prompt | model | StrOutputParser()
 
-question = "What is Capacity?"
+question = "What scenarios are high energy"
 
 docs = vectorstore.similarity_search(question)
 
