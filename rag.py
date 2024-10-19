@@ -8,7 +8,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 # reading CSV file
-loader = WebBaseLoader("https://lilianweng.github.io/posts/2023-06-23-agent/")
+loader = WebBaseLoader("file:///C:/Users/jmgos/Downloads/eeiSCLmodel.pdf")
 data = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
@@ -53,4 +53,5 @@ question = "What are the approaches to Task Decomposition?"
 
 docs = vectorstore.similarity_search(question)
 
-chain.invoke(docs)
+print(chain.invoke(docs))
+
