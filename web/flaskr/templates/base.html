@@ -3,31 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>User Input and Posts</title>
-  <script>
-    function showInput() {
-      const userInput = document.getElementById("user_input").value;
-      document.getElementById('display').textContent = userInput;
-    }
-  </script>
 </head>
 <body>
 
+  <h1>Submit Your Message</h1>
+
   <form method="POST">
-    <label><b>Enter a Message</b></label>
-    <input type="text" name="body" id="user_input">
+    <label><b>Enter a Message:</b></label>
+    <input type="text" name="body" required>
     <button type="submit">Submit</button>
   </form>
 
+  {% if result %}
+    <h2>Program Output</h2>
+    <p>{{ result }}</p>
+  {% endif %}
 
-  <hr>
 
-  <h2>All Posts</h2>
+  <!--
+  <h2>All Posts (Latest First)</h2>
   {% if posts %}
     {% for post in posts %}
-      <article class="post">
-        <header>
-          <div>{{ post['body'] }}</div>
-        </header>
+      <article>
+        <p>{{ post['body'] }}</p>
       </article>
       {% if not loop.last %}
         <hr>
@@ -36,6 +34,7 @@
   {% else %}
     <p>No posts yet. Be the first to submit a message!</p>
   {% endif %}
-
+-->
 </body>
 </html>
+
