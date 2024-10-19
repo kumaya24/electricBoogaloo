@@ -1,0 +1,27 @@
+Capacity: Incident with a release of high energy in the presence of a direct control where a
+serious injury is not sustained.
+Direct Control: A barrier that is specifically targeted to the high-energy source; effectively
+mitigates exposure to the high-energy source when installed, verified, and used properly; and
+is effective even if there is unintentional human error during work that is unrelated to the
+installation of the control.
+Energy Contact: Instance when high energy is transmitted to the human body.
+Energy Proximity: A circumstance where a high-energy source may be within 6 feet of a
+worker before being contained or any distance when there is restricted egress from the
+energy source.
+Energy Release: An instance where energy source changes state and is exposed to the
+environment.
+Exposure: Condition where high energy is present in the absence of a direct control.
+High Energy: An element of work that involves more than 500 ft-lbs of physical energy.
+High-Energy Incident: An instance where the high-energy source was released and where
+the worker came in contact with or proximity to the high-energy source.
+High-Energy Serious Injury or Fatality (HSIF): Incident with a release of high energy in the
+absence of a direct control where a serious injury is sustained.
+Low-Energy Serious Injury or Fatality (LSIF): Incident with a release of low energy in the
+absence of a direct control where a serious injury is sustained.
+Low Severity: Incident with a release of low energy where no serious injury is sustained.
+Potential Serious Injury or Fatality (PSIF): Incident with a release of high energy in the
+absence of a direct control where a serious injury is not sustained.
+Serious Injury or Fatality: Life-threatening or life-altering incident as defined by the EEI SIF
+Criteria.
+Success: Condition where a high-energy incident does not occur because of the presence of
+a direct control.
