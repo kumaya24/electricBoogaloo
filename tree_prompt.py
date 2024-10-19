@@ -31,19 +31,41 @@ def run_decision_tree(note):
             return "Low Severity"
 
 def serious_injury(note):
-    # TODO
-    return
+    question = "Did a serious injury occur in the following scenario?"
+    response = askLLM(generateYNPrompt(note, question))
+    return yn_to_tf(response)
 
 def direct_control(note):
-    # TODO
-    return
+    question = "" # TODO
+    response = askLLM(generateYNPrompt(note, question))
+    return yn_to_tf(response)
 
 def high_energy_present(note):
-    # TODO
-    return
+    question = "" # TODO
+    response = askLLM(generateYNPrompt(note, question))
+    return yn_to_tf(response)
 
 def high_energy_incident(note):
-    # TODO
-    return
+    question = "" # TODO
+    response = askLLM(generateYNPrompt(note, question))
+    return yn_to_tf(response)
+
+def generateYNPrompt(note, question):
+    prompt = question + " Answer with yes or no.  The scenario is: " + note
+    return prompt
+
+def askLLM(prompt):
+    input_ids = tokenizer(prompt, return_tensors="pt").input_ids
+    return model.generate(input_ids)
+
+def yn_to_tf(output):
+    if "yes" in str(output):
+        return True
+    else:
+        return False
 
 
+for note in notes[0:100]:
+    print(serious_injury(notes[0]))
+
+print("done")
