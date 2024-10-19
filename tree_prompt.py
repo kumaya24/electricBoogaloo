@@ -2,10 +2,12 @@ import pandas as pd
 import csv
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
-tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
-model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base")
+tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-small")
+model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-small")
 
 data = pd.read_csv("data.csv")
+
+log = open("log.txt", "w")
 
 notes = data['PNT_ATRISKNOTES_TX'].to_list()
 
@@ -40,8 +42,10 @@ def direct_control(note):
     response = askLLM(generateYNPrompt(note, question))
     return yn_to_tf(response)
 
+# this prompt is the priority.
 def high_energy_present(note):
-    question = "" # TODO
+    question = "Does the following scenario have any dangerous hazards?"
+    # question = "Does the following scenario have any of the following hazards: a suspended load, a person above 4 feet off the ground, moving equipment near people, a vehicle moving faster than 30 miles per hour, heavy rotating equipment, temperature greater than 150 degrees fahrenheit, fire, explosion, exposure to unsupported soil more than 5 feet deep, electricity exceeding 50 volts or an arc flash, exposure to toxic chemicals or radiation?  " # TODO
     response = askLLM(generateYNPrompt(note, question))
     return yn_to_tf(response)
 
@@ -56,16 +60,18 @@ def generateYNPrompt(note, question):
 
 def askLLM(prompt):
     input_ids = tokenizer(prompt, return_tensors="pt").input_ids
-    return model.generate(input_ids)
+    response = tokenizer.decode(model.generate(input_ids)[0])
+    log.write(f'Prompt: {prompt}\n Response: {response} \n')
+    return response
 
 def yn_to_tf(output):
-    if "yes" in str(output):
+    if "yes" in output:
         return True
     else:
         return False
 
-
 for note in notes[0:100]:
-    print(serious_injury(notes[0]))
+    print(high_energy_present(note))
 
 print("done")
+log.close()

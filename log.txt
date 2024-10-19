@@ -1,0 +1,200 @@
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was working a near by cliff that had about a 20' drop off, crew didn't discuss as a hazard on briefing, i discussed with GF and he told the foreman to make the corrections and place something out there to give crews a visual.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] trucks with cut out bumbers need a hitch step fabricated to facilitate safe entry and exit from the back
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Employee rigged a concrete culvert to be off load from a flat bed trailer. Employee was in line of fire when culvert was being lifted.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] tender was not wearing his Hardhat. I recommended they discuss PPE use during the after lunch briefing.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: A drop zone was not clearly marked by the crew while the climber aloft was bringing the tree down to a spar.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Discussed the need to utilize PVDs during assessment with unknown conditions and downed lines. AEP Utilities - PVD Policy
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Team was wearing all appropriate PPE for the tasks at hand until the hydrovac team started their work. I noticed that the equipment was rather loud, so I conducted a noise survey and shared the results with the team. I also shared the NIOSH app that I was using with the crew leaders as well. They weren't familiar with it, and they downloaded the application for their use too. Kudos to the team, as they all went and got their hearing protection and thanked me for sharing the results.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: No [NAME] version available. [NAME] went over briefing with us. Explained the need for and purpose of [NAME] briefing. Need more detail on ATE fire briefing; no assignments, water source, or humidity.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: After looking at the job LCS requested a Vac truck due to seeing the markings of all underground utilities in the area.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] member was standing alongside the road while other crew member was cutting brush around pole. This was a very high traffic area and crew member should have been farther off the road to avoid getting hit.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Asked crew last time they inspected their harness, was unable to remember. Had linemen inspect their harnesses before going up in bucket
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Wheel chocks were only placed on one side, and they were placed on the uphill side. ( Slight Slope )
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The [NAME] was provided some coaching for not having signs on the cross street, as the [NAME] working close to an intersection, and there was no warning for cars turning onto the street with the work zone. The [NAME] moved a sign, but was advised to talk to management about getting two more [NAME] Ahead signs to have for this set up situation.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] member was driving without a seatbelt on the ROW. Spoke to their safety supervisor and he corrected the employee.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: LMA got out of truck without hard had on, there were a crane loading scrap wood and another crew loading poles in the vicinity.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Individual climbed into bucket with one hand full. 3 points of contact not used. Specifically covered in SJO.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Three of the four [NAME] members were not wearing hard hats. The [NAME] Lead was provided some coaching on this, and agreed that they should have had hard hats on, while completing the task they were working on.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was using sling to secure dolly to pull cable in trenwa. Sling was wrapped around excavator bucket with rough edges. Recommend contractor use approved rigging practices to protect sling from damage.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] member was observed working without safety glasses. I spoke to and coached the team member about the importance of proper PPE. The matter was corrected. PPE Required [NAME] - T & C 8. 1. 1, 8. 1. 3, 8. 1. 6, 8. 3. 1 ( [NAME] Protection )
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: driver was not comfortable driving a 1500 dodge pickup. i could sense that they were at ease driving this vehicle by the body signs and tension in the arms. i asked before and during the driving session of their comfort level. after completing drive i spoke about bring this issue up to their supervision if they ever had to drive a company vehicle.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Job briefing communicated verbally but not documented. Discussed with Briar. [NAME] had paper tailboards in truck. Did not use. Coached and will use moving forward when working in pairs.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was using crane to set rebar cage. They didnt have inspect or check rigging on the THA or JB. The suspended load icon wasnt marked on the JB either. Talked with the supervisor on the importance of capturing that information on the JB
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Operator was running equipment without use of his seatbelt. I stopped him and reminded him to wear seatbelts during operations. [NAME] made correction immediately.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Observed [NAME] mechanic changing tire on site truck. The truck was being lifted by the crane boom from the service truck attached to the reese hitch of the truck. The hitch is not a certified lifting point for the truck. The work was also being done without having any jack stands or cribbing under the truck while the tire was being changed.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] of second crew never signed JB. JEL never discussed or documented. Entry location to ROW was never marked, [NAME] cone was leading visitors to the steepest and most hazardous location to enter ROW.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: member of crew working without safety glasses. starting saw by multiply members without hearing protection.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: I did coach with LCS on LOF around bottom of pole as one employee had started working at the base of the pole while lineman in bucket was above.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Employee was climbing the pole and planning to use a chainsaw. The question was asked is it ok to use the saw without chaps while climbing working off of the pole. There is not language around this practice, so we chose to wear the chaps.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: WSHP provided by [NAME] River Electrical did not have the correct contact information for AEP personnel.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: I noticed that they should be covering up a iron cross that they were working near. i told them about the area that should be covered up and they made the necessary adjustments
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: I did observe a ground in use that didn't have the proper label attached for testing. I did make them aware of the condition.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Climber Amiot had to regularly adjust and tighten his harness while aloft on the ladder, we discussed fixing this properly while not aloft and got a commitment to doing so.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The job briefing consisted of to many job steps which didnt allow for the crew to capture all of the hazards associated with each process of the work task. Spoke with foreman about adding an additional job briefing when necessary to ensure that they capture all of the associated hazards.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] crew as out with Dakotah's crews and niether crew had a sign out west of the crew but no sign on the east side of the crew to let people know coming around the corner that the crews were there blocking a lane of the road. This was fixed after I informed [NAME] that another sign was needed.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was parked in middle of several trucks. [NAME] had his strobe lights on. Didn't have any cones out.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Hi - vis was not being worn by crew members as they worked on / along [NAME] [NAME] Rd in [NAME], OH.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Employee removed safety eyewear to look down excavation. I reminded him to glasses back on, especially for concrete pour.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] barricading around equiment not in place while working overhead. Spot corrected, and discussed with crew.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: All stop was called to have the employees to reposition the PJ on the other side of the lines to make the finale cut to release the conductor out of the line of fire.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: CREW DID NOT HAVE A SPRAYER ON THE TRUCK. THEY SAID THAT IT WAS LEAKING AND THEY GACE IT TO THE GF TO REPLACE.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The crew is receiving stone on a new access road. Trucks are crossing under a distribution line. There are no overhead line warning signs in place.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Crewmembers were not wearing the correct PPE while working. Gloves, hard hat and glasses were missing. I addressed the issues with the crew and the violations were correct immediately.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Confined Space identified on the SIF Icons. There is no confined space associated with the tasks on the THA
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Caustic tank area housekeeping above the RO needs improved - mops, cords, and hoses lying in path. This is above the RO. Observed inadequate housekeeping - mop left out on grating and lying against the wall. This was around the caustic area and above the RO on the second floor. Caustic tank - loading area: housekeeping needed improved: empty drums and spilled media evident. Caustic tank area - slips, trips and falls evident - hoses left out across the floor. Recommended that 2 drums need spill containment.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: RB - foreman witnessed operating chainsaw face level with no chaps, no glasses, no hearing protection creating a potential high energy mechanical SIF
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: This truck has been noted many times for various issues including cracked windshield, broken weld on step on rear of truck, grill held in place with rope. The windshield has been repaired. The foreman was working on the truck heater vents when I arrived. The blower motor is turned off but the vents won't close from the engine compartment resulting in a very warm cab while driving.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] failed to wipe stick off before use, coached on the expectation around cleaning sticks on the first use of the day.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] greenfield construction site that was mid construction. The crew recognized the various hazards and mitigated best they could, but there was definite increased risk all around.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Path crew was taking had small but steep embankment. Recommended crew walk around the area to a more level entrance that was only approximately 15 yards away.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: No Porta - [NAME] available for crew use on either sides of highway 181. Discussed with Supervisor and assured they would go back to laydown yard and get trailers for use the following day. Follow - up to ensure in place.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: I had suggested that the crew take the phasing measurements on the outside of the transformer containment to avoid slips, trips or falls and to avoid congestion with underground riser cables.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Job briefing failed to discuss multiple hazards associated with work area. [NAME] had to access through a barb wire fence to get to work area and didn't have the safest path marked. [NAME] also failed to mention their procedure while multiple employees using saws at the same time in the ROW. GF made corrections and documented the 20' rule on the job briefing. Also crews were applying herbicide MPG without the proper rubber gloves being worn. It also had to be corrected on the job briefing by the GF.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Flagman sign too close to flagger. Traffic was backing up to the last sign. [NAME] spacing addressed with crew
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: During my observation I observed 2 employees cutting [NAME] tube without their gloves being worn. I asked them to put them on and explained the reasons why. I also spoke with their foreman [NAME] Fickey about this as well.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: One worker pulling new wire with gloves on but did not have FR sleeves down. I reminded him to keep his sleeves down while wearing those gloves. [NAME] agreed.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Observed a scaffolding that was fully erected and usable that did not have scaffold inspection tag on it to show that it had been inspected for use by a competent person.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Guard structure placement only adequate on tension end of wire pull. Additional guard structure provides no protection, and discussed with NHPL Safety, Supt, and TCR. Additional equipment being brought over to provide guarding of single phase perpendicular distribution. Spot corrected.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: FR sleeves were rolled up when attempting to close in transformer fuse. Employee rolled down sleeves. Arc flash
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The crew just added the new location to the briefing. It was not site specific. They went from normal tree removal to a storm tree job. They did not have any new information regarding the dangers in front of them.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: This was as 2 man crew and the ground man is relatively new and not a certified climber. The foreman was confident that the ground man could perform an aerial rescue if needed?
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was being transferred from a service pole to the transformer pole leaving really long tails that had the potential to flip up into the primary. I had a conversation with the employee, he corrected and understood the concern. [NAME] was sure to maintain positive control.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Batter bards et up close to work area without rebar caps on pins. The foreman was made aware and he had them installed
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: One crew member wearing bright orange t - shirt. [NAME] thought it was okay as a substitute for traffic vest.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Bucket harness was not adjusted properly, [NAME] was ask to boom down so his harness could be adjusted.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: One operator did not have leg restraints properly placed and tight. Coached employee on the way it is required and the dangers of not being proper he made corrections immediately.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Jib that is NOT to be used due to damage. Should be tagged Out of [NAME]. Discussed with TCR and contractor expected to have removed from site. Question Training to past users, as a take - a - way for internal review by [NAME] Standards company.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Boom truck lacking [NAME] Pin to ensure load line stays in sheave. Contacted NHPL safety rep to ensure pin installed prior to any continued use of equipment.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The LCS was provided some coaching about the [NAME] members respecting the barricade ropes and not touching the trucks. One LMC had grabbed his work gloves off the truck and he also had placed his Gloves and sleeves on the back of the truck while the ropes were up. The Apprentice was coached about making sure to look at the bucket and make sure it is not in the primary / minimum approach prior to dropping the rope to access the trucks equipment.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Truck cabinets on outside of vehicle were not latched and locked to prevent opening during travel / discussed.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Job briefing listed tasks needed to complete the assigned task, but the job briefing does not assign individual tasks to the crew members.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Fire extinguisher annual inspection out of date. Extinguisher to be removed from vehicle and replaced.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was using road work signs instead of utility work signs. I spoke with lead flagger about using the proper sign.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Continue to work on digital document usage. Follow up [NAME] 1st with 4 weeks to establish document ( s ) on - site for review. Safety representative working to resolve.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The City asked the County workers across the street to make repairs and they placed a cap on the pipe while we were on site.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The LCS in charge of rigging the [NAME] 55 pole was not aware of the pole weight, and the operator of the Patriot 40 track digger derrick was not familiar with the Patriot 40s Safe [NAME] Load Chart. The [NAME] 55 pole can exceed the capacity of the equipment at the applied boom angle and load area distance. The Pole weight was est. 3062 lbs. The digger was having a hard time lifting the pole at the angle the boom was placed at first.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: All crew members were at the transformer location with no Rubber Gloves available or being used when I arrived.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The fleet tech routinely would remove the safety glasses from his face and placed them on his head. During the tasks he needed reminding that he had removed his safety glasses. This was discussed in greater detail at the conclusion of the observation. [NAME] was reminded to be a little more patient regarding the use of his glasses and that he could request glasses with diopters to support reading and closer examination of smaller part, when necessary.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: * Only two working chainsaws were available between two manual trucks. [NAME] stated they would trade off throughout the day and request that necessary repairs would be made to ensure additional chainsaws were available if needed not only for production but for emergency reasons.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: LMA went up and untied burnt off arm and placed phase on top of pole before Installing grounds. [NAME] had them with him, rushing and did that before grounding.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] ahead sign was set out behind truck near work site, however, that was in right of way in forest. Sign should have been placed near entrance to dirt road that led down to the crew in case emergency responders were called to work site.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] area was set up great. But flaggers were not engaged in watching for hazards. They took for granted that because it was in a parking lot they could relax
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Digger and Bucket truck that are parked on - site did not have proper wheel chokes in place or being used properly
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: U3 [NAME] End: Area through passageway on floor 1 has protruding bolts sticking up 1 to 2 above concrete surface. This area is south of Global s breakroom. And, the bolt studs are found on each side of the doorway and could be slip, trip, fall potentials. Notified and advised plant with power point of shared findings, communicated, and placed on corrective issue tracking sheet.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was using jack hammer periodically and have hearing protection sign or extra hearing protection for visitors
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The crew has not performed a Pre Job Briefing. They shared an Emergency Action Plan Document with me. They were not aware of the Pre Job Briefing Requirement. I shared the location of the Pre Job Briefing in VERO with the crew. The foreman took notes and will relay the information to the management team. The crew has excellent attitudes and were open to coaching.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Employees change gloves while a loft with no re - brief. Employees took class 0 And class two gloves and sleeves a loft at the same time.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] was using hard cover on the pole. The hard cover did not cover the pole adequately. [NAME] addressed the issue when asked. the crew decided to use rubber blankets to cover the portion of the pole the hard coer would not cover. crew took the suggestion very well.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: A few of the employees didnt have ice cleats. The LCS gave his pair to one of the linemen and I rounded up another pair for them the next day. None of the team members had their PVD on
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Job description indicated bucket work, flagging, and chipping brush, however, the [NAME] Procedures only had initials and no assignment.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] Energy Hazards and Icons not documented or utilized on job brief. Discussed with crew the importance of identifying the [NAME] Energy Hazards and how the icons can assist them with identifying and mitigating those hazards. AEP S & H [NAME] 1. 06
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: No annual inspection on extinguisher. Informed driver and he will get a new one at service center soon.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Coached crew on the importance of covering an open hole with plywood and writing hole on it. They had plywood and snow fence in place.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Disregarded PJB and THA plan by not donning their PPE. We plan our work and work our plan to avoid any unsafe act. Theres a reason as to why we conduct these THAs and PJBs. We must also lead by example as supervisors, supervisor providing coverage tends to wear his designer glasses instead of the proper z87 safety glasses as required.
+ Response: <pad> yes</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: [NAME] in use was not grounded. Aerial devices shall be grounded when in use. Grounding shall be applied to a system ground conductor such as station equipment ground, structure ground, or a grounded structure. Article 10. 4. 3. 1, AEP Transmission 2020 Contractor Safety Handbook
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Job briefing conducted in a hurry due to extreme cold and outage situation. Talked with foreman about the need to have a quality briefing no matter the conditions.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Cones were good by vehicle but was not using any drop zone cones when there was a climber trimming a tree.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: Encouraged foreman to further discuss and document hazards associated with rotating equipment ( task was installing 18 guy anchors at Str. 2 )
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: The crew used the crane to remove rings from foundations and are cleaning up bolts on the foundation. This task was not listed on the THA.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: One of the employees did not have his forks tilted back far enough and had the transformer on the end of the forks, while also turning before he lowered the load. Stopped the job and asked if a JSA had been performed before starting the job. Employees stated they had done a verbal JSA, but had failed to talk about the wet pallets and the need to tilt forks back and to lower forks before turning.
+ Response: <pad> no</s> 
+Prompt: Does the following scenario have any dangerous hazards? Answer with yes or no.  The scenario is: chipper tire showing cord on driver side. GF present during audit and was informed. he said he would work on getting tire fixed.
+ Response: <pad> no</s> 
