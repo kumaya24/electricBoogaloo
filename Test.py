@@ -8,6 +8,16 @@ from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 from langchain_ollama import ChatOllama
 
+def standardize_res(res):
+    res = res.lower()
+    if "yes" in res:
+        return "yes"
+    elif "no" in res:
+        return "no"
+    else:
+        return "unsure"
+
+
 # Read csv data and get only the notes.
 input_csv = pd.read_csv("data.csv")
 notes = input_csv["PNT_ATRISKNOTES_TX"].to_list()
@@ -96,13 +106,15 @@ docs = vectorstore.similarity_search(question)
 
 log = open("log.txt", "w")
 # while notes is not empty
+col = []
 count = 0
 for note in notes:
-    log.write(chain.invoke((docs, note)))
+    res = chain.invoke((docs, note))
+    standard_res = standardize_res(res)
+    col.append(standard_res)
     count += 1
     if count % 10 == 0:
         print(count)
 
-
-log.close()
-
+input_csv.insert(6, "High_Value", col, True)
+input_csv.to_csv('labelled_data.csv', index=False)
