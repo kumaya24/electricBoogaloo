@@ -80,7 +80,7 @@ with col[0]:
     
 
 with col[1]:
-    cloudtext = ''
+    cloud_text = ''
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     month_count = [0,0,0,0,0,0,0,0,0,0,0,0]
 
@@ -88,7 +88,15 @@ with col[1]:
     for mon, yr, key, com, hv in fullyeardata:
         if hv == 'yes':
             month_count[int(mon) - 1] = month_count[int(mon) - 1] + 1
-        
+            cloud_text = cloud_text + key + ', '
+    
+    cloud_text_final = cloud_text[0:(len(cloud_text) - 2)] # get rid of last space and comma
+    wordcloud = WordCloud().generate(cloud_text_final)
+
+    fig, ax = plt.subplots()
+    ax.imshow(wordcloud, interpolation='bilinear')
+    ax.axis("off")
+    st.pyplot(fig)
     
     chart_data = pd.DataFrame(
         {
@@ -96,6 +104,9 @@ with col[1]:
             "Instances": month_count,
         }
     )
+
+    
+
     if selected_year == 'All':
         st.markdown('Number of Total High Value Instances')
     else:
