@@ -2,8 +2,8 @@ import pandas as pd
 import csv
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
-tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-small")
-model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-small")
+tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-base")
+model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base")
 
 data = pd.read_csv("data.csv")
 
@@ -70,8 +70,15 @@ def yn_to_tf(output):
     else:
         return False
 
-for note in notes[0:100]:
-    print(high_energy_present(note))
+# for note in notes[0:100]:
+#     print(high_energy_present(note))
 
-print("done")
-log.close()
+# print("done")
+# log.close()
+
+def high_elevation(note):
+    question = "Does this scenario contain a someone higher than 4 feet above the ground?"
+    response = askLLM(generateYNPrompt(note, question))
+    return yn_to_tf(response)
+
+print(high_elevation("A crew was closing a 7-ton door on a coal crusher. As the door was lowered, an observer noticed that the jack was not positioned correctly and could tip. The observer also noted that workers were nearby, within 4 feet of the jack."))
