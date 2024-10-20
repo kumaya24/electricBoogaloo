@@ -1,118 +1,51 @@
-import torch
-import transformers
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 import pandas as pd
-
-'''
-tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased-finetuned-sst-2-english")
-model = DistilBertForSequenceClassification.from_pretrained("distilbert-base-uncased-finetuned-sst-2-english")
-
-aep_dataset = pd.read_csv(
-    "C:\\Users\\Black\\Downloads\\CORE_HackOhio_subset_cleaned_downsampled 1.csv"
-)
-
-# pipeline = pipeline("text2text-generation", model=model, device=-1, tokenizer=tokenizer, max_length=1000)
-
-classifier = transformers.pipeline(
-    task="text-classification",
-    model=model,
-    tokenizer=tokenizer,
-    max_length=100,
-)  # Note: We specify cache_dir to use predownloaded models.
-
-results = classifier(aep_dataset["PNT_ATRISKNOTES_TX"].to_list()[0:5])
-print(results)
-'''
-'''
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.core import Settings, SimpleDirectoryReader, VectorStoreIndex
-from llama_index.core.retrievers import VectorIndexRetriever
-from llama_index.core.query_engine import RetrieverQueryEngine
-from llama_index.core.postprocessor import SimilarityPostprocessor
-
-
-Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
-
-Settings.llm
-Settings.chunk_size = 256
-Settings.chunk_overlap = 25
-
-documents = SimpleDirectoryReader("Data").load_data()
-index = VectorStoreIndex.from_documents(documents)
-
-print(documents)
-
-
-# Setting up a retriever
-top = 3
-
-retriever = VectorIndexRetriever(
-    index=index,
-    similarity_top = top
-)
-
-# Assemble query engine
-query_engine = RetrieverQueryEngine(
-    retriever=retriever,
-    node_postprocessors=[SimilarityPostprocessor(similarity_cutoff=0.5)],
-)
-
-query = "What are high value indicators?"
-response = query_engine.query(query)
-
-# reformat response
-context = "Context: \n"
-for i in range(top):
-    context = context + response.sources_nodes[i].text + "\n\n"
-
-print(context)
-'''
-
 import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
-
-from langchain_community.document_loaders import WebBaseLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
 from langchain_community.document_loaders import DirectoryLoader
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_chroma import Chroma
+from langchain_ollama import OllamaEmbeddings
+from langchain_ollama import ChatOllama
+
+# Read csv data and get only the notes.
+input_csv = pd.read_csv("data.csv")
+notes = input_csv["PNT_ATRISKNOTES_TX"].to_list()
+
+# load and prepare context data
+ssl._create_default_https_context = ssl._create_unverified_context
 loader = DirectoryLoader("Data", glob="**/*.txt")
 data = loader.load()
-# print(len(data))
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
 all_splits = text_splitter.split_documents(data)
-
-from langchain_chroma import Chroma
-from langchain_ollama import OllamaEmbeddings
 
 local_embeddings = OllamaEmbeddings(model="gemma2:2b")
 
 vectorstore = Chroma.from_documents(documents=all_splits, embedding=local_embeddings)
 
-# question = "What is Capacity?"
-# docs = vectorstore.similarity_search(question)
-# print(len(docs))
-# print(docs[0])
-
 # Set the model 
-
-from langchain_ollama import ChatOllama
 model = ChatOllama(
     model="gemma2:2b",
     max_tokens=1
 )
 
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate
-
+# create a prompt template
 prompt = ChatPromptTemplate.from_template(
     "Given the following information on the presence of high-energy: {docs}, does the following scenario clearly have any high-energy elements, yes or no? Do not explain your answer. {scenario}"
 )
 
 # Convert loaded documents into strings by concatenating their content
 # and ignoring metadata
-def format_docs(docs):
+def format_docs(docsAndNotes):
+    docs, notes = docsAndNotes
     return "\n\n".join(doc.page_content for doc in docs)
+
+# Get next scenario string from list
+# not sure if this is the best way to do this
+def scenario_string(docsAndNotes):
+    docs, note = docsAndNotes
+    return note
 
 # Yes
 # def scenario_string(test):
@@ -157,42 +90,19 @@ def format_docs(docs):
 
 chain = {"docs": format_docs, "scenario": scenario_string} | prompt | model | StrOutputParser()
 
+# Narrow down context 
 question = "What scenarios are high energy"
-
 docs = vectorstore.similarity_search(question)
 
-print(chain.invoke(docs))
+log = open("log.txt", "w")
+# while notes is not empty
+count = 0
+for note in notes:
+    log.write(chain.invoke((docs, note)))
+    count += 1
+    if count % 10 == 0:
+        print(count)
 
-'''
-from langchain_community.document_loaders import WebBaseLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-loader = WebBaseLoader("https://lilianweng.github.io/posts/2023-06-23-agent/")
-data = loader.load()
+log.close()
 
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
-all_splits = text_splitter.split_documents(data)
-
-from langchain_chroma import Chroma
-from langchain_ollama import OllamaEmbeddings
-
-local_embeddings = OllamaEmbeddings(model="nomic-embed-text")
-
-vectorstore = Chroma.from_documents(documents=all_splits, embedding=local_embeddings)
-
-question = "What are the approaches to Task Decomposition?"
-docs = vectorstore.similarity_search(question)
-print(len(docs))
-
-from langchain_ollama import ChatOllama
-
-model = ChatOllama(
-    model="mistral",
-)
-
-response_message = model.invoke(
-    "Simulate a rap battle between Stephen Colbert and John Oliver"
-)
-
-print(response_message.content)
-'''
