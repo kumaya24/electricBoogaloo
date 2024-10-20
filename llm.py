@@ -82,8 +82,3 @@ def runModelOnCSV(filename):
 
     # write to output file
     input_csv.to_csv(output, index=False)
-
-
-# run model on data
-runModelOnCSV("data_small.csv")
-# runModelOnCSV("data.csv")
