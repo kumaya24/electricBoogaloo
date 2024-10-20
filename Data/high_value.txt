@@ -1,0 +1,53 @@
+High energy is present only if one or more of the following scenarios occur:
+
+Suspended Load: More than five hundred lbs of load higher than one foot off the ground.
+
+or
+
+Elevation: A human at four or more feet above ground is high energy.
+
+or
+
+Mobile Equipment/Traffic With Workers on Foot:  Most mobile equipment, including motor vehicles, exceeds the high-energy threshold when the equipment or vehicle is in motion.
+
+or
+
+Motor Vehicle Incident (occupant): Estimates of the motor vehicle speed of thirty miles per hour or more is high energy.
+
+or
+
+Heavy Rotating Equipment: All heavy rotating equipment beyond powered hand tools typically exceed the high-energy threshold
+
+or
+
+High Temperature: Exposure to any substance greater than or equal to 150 degrees Fahrenheit
+
+or
+
+Steam: Any circumstance with the release of steam exceeds the high-energy threshold. 
+
+or
+
+Fire With Sustained Fuel Source: Fire with a sustained source of fuel exceeds the high-energy threshold. 
+
+or
+
+Explosion: Most incidents described as an explosion exceed the high-energy threshold. 
+
+or
+
+Excavation or Trench: An exposure to unsupported soil in a trench or excavation that exceeds five feet of height exceeds the high-energy threshold. 
+
+or
+
+Electrical Contact With Source: Electricity equal to or exceeding 50 volts 
+
+or
+
+Arc Flash: Any arc flash exceeds the high-energy threshold
+
+or
+
+High Dose of Toxic Chemical or Radiation: Exposure to toxic chemicals or radiation.
+
+Only the above situations are high-energy scenarios.
