@@ -80,7 +80,7 @@ with col[0]:
     
 
 with col[1]:
-    cloudtext = ''
+    cloud_text = ''
         
 
     if selected_year == 'All':
@@ -92,6 +92,16 @@ with col[1]:
 
         for mon, yr, key, com, hv in keydata:
             year_count_dict[yr] += 1
+            if hv == 'yes':
+                cloud_text = cloud_text + key + ', '
+        
+        cloud_text_final = cloud_text[0:(len(cloud_text) - 2)] # get rid of last space and comma
+        wordcloud = WordCloud().generate(cloud_text_final)
+
+        fig, ax = plt.subplots()
+        ax.imshow(wordcloud, interpolation='bilinear')
+        ax.axis("off")
+        st.pyplot(fig)
 
         chart_data = pd.DataFrame(
             {
@@ -105,10 +115,20 @@ with col[1]:
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         month_count = [0,0,0,0,0,0,0,0,0,0,0,0]
 
+    #fullyeardata = get_year_data(selected_year, keydata)
         for mon, yr, key, com, hv in fullyeardata:
             if hv == 'yes':
                 month_count[int(mon) - 1] = month_count[int(mon) - 1] + 1
+                cloud_text = cloud_text + key + ', '
+        
+        cloud_text_final = cloud_text[0:(len(cloud_text) - 2)] # get rid of last space and comma
+        wordcloud = WordCloud().generate(cloud_text_final)
 
+        fig, ax = plt.subplots()
+        ax.imshow(wordcloud, interpolation='bilinear')
+        ax.axis("off")
+        st.pyplot(fig)
+        
         chart_data = pd.DataFrame(
             {
                 "Month": months, 
@@ -116,5 +136,14 @@ with col[1]:
             }
         )
         st.bar_chart(chart_data, x="Month", y="Instances")
+
+    
+
+    if selected_year == 'All':
+        st.markdown('Number of Total High Value Instances')
+    else:
+        st.markdown('Number of High Value Instances in ' + selected_year)
+
+
 
 st.dataframe(df_reshaped)
