@@ -81,24 +81,40 @@ with col[0]:
 
 with col[1]:
     cloudtext = ''
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    month_count = [0,0,0,0,0,0,0,0,0,0,0,0]
-
-    #fullyeardata = get_year_data(selected_year, keydata)
-    for mon, yr, key, com, hv in fullyeardata:
-        if hv == 'yes':
-            month_count[int(mon) - 1] = month_count[int(mon) - 1] + 1
         
-    
-    chart_data = pd.DataFrame(
-        {
-            "Month": months, 
-            "Instances": month_count,
-        }
-    )
+
     if selected_year == 'All':
         st.markdown('Number of Total High Value Instances')
+        year_count_dict = {}
+        for year in year_list:
+            if year != 'All':
+                year_count_dict[year] = 0
+
+        for mon, yr, key, com, hv in keydata:
+            year_count_dict[yr] += 1
+
+        chart_data = pd.DataFrame(
+            {
+                "Year": year_count_dict.keys(),
+                "Instances": year_count_dict.values()
+            }
+        )
+        st.bar_chart(chart_data, x="Year", y="Instances")
     else:
         st.markdown('Number of High Value Instances in ' + selected_year)
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        month_count = [0,0,0,0,0,0,0,0,0,0,0,0]
 
-    st.bar_chart(chart_data, x="Month", y="Instances")
+        for mon, yr, key, com, hv in fullyeardata:
+            if hv == 'yes':
+                month_count[int(mon) - 1] = month_count[int(mon) - 1] + 1
+
+        chart_data = pd.DataFrame(
+            {
+                "Month": months, 
+                "Instances": month_count,
+            }
+        )
+        st.bar_chart(chart_data, x="Month", y="Instances")
+
+st.dataframe(df_reshaped)
