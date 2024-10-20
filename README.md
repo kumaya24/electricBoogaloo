@@ -12,7 +12,10 @@ The project utilizes a local LLM (Large Language Model), combining **prompt engi
 
 ## Features  
 - An interactive dashboard displaying data analysis.  
-- Custom user views can be created by year and category.
+- Custom user views can be created by year and category. Users can choose their preference by slidebar on lefthand.
+
+![Dashboard Preview](pics/dashboard.png)
+![Dashboard upload fuction preview](pics/upload.png)
 
 ## Default Branch  
 The default branch for this project is **`dev`**. Please ensure you are working on the correct branch.  
